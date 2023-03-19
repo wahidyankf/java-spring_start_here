@@ -12,7 +12,7 @@ public class Main {
     var commentNotificationProxy = new EmailCommentNotificationProxy();
 
     var commentService = new CommentService(commentRepository,
-                                            commentNotificationProxy);
+        commentNotificationProxy);
 
     var comment = new Comment();
     comment.setAuthor("Laurentiu");
