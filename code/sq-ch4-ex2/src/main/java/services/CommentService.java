@@ -13,7 +13,7 @@ public class CommentService {
   private final CommentNotificationProxy commentNotificationProxy;
 
   public CommentService(CommentRepository commentRepository,
-                        CommentNotificationProxy commentNotificationProxy) {
+      CommentNotificationProxy commentNotificationProxy) {
     this.commentRepository = commentRepository;
     this.commentNotificationProxy = commentNotificationProxy;
   }

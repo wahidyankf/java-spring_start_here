@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Qualifier("PUSH")
 public class CommentPushNotificationProxy
-        implements CommentNotificationProxy {
+    implements CommentNotificationProxy {
 
   @Override
   public void sendComment(Comment comment) {
