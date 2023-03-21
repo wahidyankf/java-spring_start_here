@@ -1,13 +1,11 @@
 package services;
 
-import model.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+
+import model.Comment;
 import processors.CommentProcessor;
-import repositories.CommentRepository;
 
 @Service
 public class CommentService {
