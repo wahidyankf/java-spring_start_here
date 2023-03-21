@@ -15,7 +15,7 @@ public class LoggingAspect {
   @Around("execution(* services.*.*(..))")
   public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
     String methodName = joinPoint.getSignature().getName();
-    Object [] arguments = joinPoint.getArgs();
+    Object[] arguments = joinPoint.getArgs();
 
     logger.info("Method " + methodName +
         " with parameters " + Arrays.asList(arguments) +
