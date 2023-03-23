@@ -1,18 +1,19 @@
 package com.example;
 
-import com.example.model.Account;
-import com.example.repositories.AccountRepository;
-import com.example.services.TransferService;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.math.BigDecimal;
+import java.util.Optional;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import java.math.BigDecimal;
-import java.util.Optional;
-
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import com.example.model.Account;
+import com.example.repositories.AccountRepository;
+import com.example.services.TransferService;
 
 @SpringBootTest
 class TransferServiceSpringIntegrationTests {
