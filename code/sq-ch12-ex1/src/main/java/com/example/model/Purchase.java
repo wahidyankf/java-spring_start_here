@@ -35,8 +35,10 @@ public class Purchase {
 
   @Override
   public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
+    if (this == o)
+      return true;
+    if (o == null || getClass() != o.getClass())
+      return false;
     Purchase purchase = (Purchase) o;
     return id == purchase.id && Objects.equals(product, purchase.product) && Objects.equals(price, purchase.price);
   }
